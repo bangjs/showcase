@@ -1,0 +1,13 @@
+header h1 {
+	font-size: 4em;
+	text-align: center;
+}
+header h1 .logo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 3em;
+	margin-left: -.5em;
+}
+header h1 .name {
+	margin-left: -1.3em;
+}

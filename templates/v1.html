@@ -1,0 +1,25 @@
+{% extends "templates/base.html" %}
+
+{% block app %}
+  <div ng-controller="compose">
+    <form ng-submit="scrape.start(input.url)">
+      <input type="text" ng-model="input.url"
+             placeholder="Type your URL here and hit Enter" autofocus>
+    </form>
+    <div id="snippet" ng-show="scrape.result" ng-cloak>
+      <div class="image" showcase-image="image.selected"
+           ng-show="image.selected" ng-cloak>
+          <img ng-src="{{image.selected}}">
+          <button class="prev" type="button" ng-click="image.select(-1)"
+                  ng-show="image.selectables.length > 1" ng-cloak>&laquo;</button>
+          <button class="next" type="button" ng-click="image.select(1)"
+                  ng-show="image.selectables.length > 1" ng-cloak>&raquo;</button>
+      </div>
+      <input class="title" type="text" ng-model="input.title"
+             placeholder="Snippet title">
+      <textarea class="description" ng-model="input.description"
+                placeholder="Snippet description"></textarea>
+    </div>
+  </div>
+  <script src="v1.js"></script>
+{% endblock %}

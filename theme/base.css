@@ -1,0 +1,100 @@
+@font-face {
+	font-family: "Fira Code";
+	src: url("FiraCode-Regular.otf") format("opentype");
+}
+
+* {
+	box-sizing: border-box;
+}
+
+[ng-cloak] {
+	display: none;
+}
+[ng-app][ng-cloak] {
+	display: block !important;
+	opacity: 0;	/* preserve focus and similar state */
+}
+
+body {
+	padding: 0 5%;
+	font-family: Roboto, sans-serif;
+	font-weight: 400;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500;
+}
+
+a {
+	color: Crimson;
+}
+
+pre {
+	margin: 2em -1em;
+	padding: 1em 1em;
+
+	border-top: 1px solid Gainsboro;
+	border-bottom: 1px solid Gainsboro;
+	border-radius: .5em;
+}
+code {
+	font-family: "Fira Code", monospace;
+	text-rendering: optimizeLegibility;	/* enable ligatures */
+	font-size: .95em;
+}
+
+.emoji {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header h1 .logo img {
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	-ms-interpolation-mode: nearest-neighbor;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+header h1 .name {
+	font-family: Bangers, Roboto, sans-serif;
+	letter-spacing: .05em;
+	text-shadow: 3px 3px White;
+}
+header h1 .suffix {
+	font-size: .3em;
+	text-transform: lowercase;
+	margin-left: .3em;
+	color: Silver;
+}
+header h1 .title {
+	font-size: .3em;
+	font-style: italic;
+}
+
+header,
+article {
+	max-width: 45em;
+	margin: 0 auto;
+}
+
+article {
+	line-height: 1.6;
+}
+
+footer {
+	font-size: .8em;
+	text-align: right;
+	margin-top: 10em;
+	margin-bottom: 2em;
+}

@@ -1,0 +1,89 @@
+body {
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 1em 2em;
+}
+
+form input[type="text"] {
+	font-size: 1.4em;
+	padding: .5em;
+	width: 100%;
+	font-family: "Fira Code", monospace;
+	text-rendering: optimizeSpeed;	/* disable ligatures */
+}
+
+#snippet {
+	border-radius: 1em;
+	background-color: Linen;
+	border: 3px solid AntiqueWhite;
+	margin: 3em 0;
+	padding: 1em;
+}
+
+#snippet .image {
+	height: 400px;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#snippet .image .prev,
+#snippet .image .next {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100px;
+	font-size: 3em;
+	border: 0 none;
+	background-color: #333;
+	color: White;
+	opacity: 0;
+	transition: opacity .2s;
+}
+#snippet .image .prev {
+	left: 0;
+}
+#snippet .image .next {
+	right: 0;
+}
+#snippet:hover .image .prev,
+#snippet:hover .image .next {
+	opacity: .2;
+}
+#snippet .image:hover .prev,
+#snippet .image:hover .next {
+	opacity: .3;
+}
+#snippet .image .prev:hover,
+#snippet .iamge .prev:focus,
+#snippet .image .next:hover,
+#snippet .image .next:focus {
+	opacity: .7;
+}
+
+#snippet .title,
+#snippet .description {
+	border: 0 none;
+	width: 100%;
+	padding: .5em 10px;
+	margin-top: .5em;
+	background-color: transparent;
+	transition: background-color .2s;
+}
+#snippet .title {
+	font-size: 1.4em;
+}
+#snippet .description {
+	min-height: 5em;
+	resize: vertical;
+}
+#snippet:hover .title,
+#snippet:hover .description {
+	background-color: rgba(255, 255, 255, .4);
+}
+#snippet .title:hover,
+#snippet .title:focus,
+#snippet .description:hover,
+#snippet .description:focus {
+	background-color: rgba(255, 255, 255, .9);
+}
