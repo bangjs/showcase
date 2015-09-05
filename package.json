@@ -3,7 +3,7 @@
   "dependencies": {
     "angular": "~1.4.0",
     "baconjs": "~0.7.65",
-    "bangjs": "~0.2.1"
+    "bangjs": "~0.3.3"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
